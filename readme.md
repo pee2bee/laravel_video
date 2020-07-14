@@ -1,0 +1,5 @@
+基于laravel+vue搭建的视频播放webapp
+
+后端后台采用layui后台框架,视频使用webuploader插件上传到阿里云oss
+
+前端采用vue搭建,使用apicloud进行编译打包
