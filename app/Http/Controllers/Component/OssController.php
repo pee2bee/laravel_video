@@ -11,11 +11,11 @@ class OssController extends Controller
 	public function sign()
 	{
 		//阿里云 AccessKeyId
-		$id = 'LTAI4FdmVxwp9HJ1Un5NA9sY';
+		$id = env('ALI_ACCESS_KEY_ID');
 		//阿里云  AccessKeySecret
-		$key = 'ImjSc4fU9ohWyMOUSoCDaD7IPoSZTF';
+		$key = env('ALI_ACCESS_SECRET');
 		//OSS外网域名: 在阿里云后台OSS bucket中查看
-		$host = 'http://laravelvideo-51coode-com.oss-cn-shenzhen.aliyuncs.com';
+		$host = env('ALI_OSS_BUCKET_DOMAIN');
 		//oss中本次上传存放文件的目录
 		$dir = $_GET['dir'];
 		function gmt_iso8601($time)
